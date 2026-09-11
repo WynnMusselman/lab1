@@ -1,0 +1,84 @@
+*{
+    margin: 0;
+    box-sizing: border-box;
+}
+
+@font-face{
+    font-family: spookyFont;
+    src: url("./src/Creepster-Regular.ttf");
+}
+
+#wrapper{
+    width: 80vw;
+    margin: 0 auto;
+
+    background-color: orange;
+}
+
+header{
+    padding: 3%;
+    background-color: plum;
+    text-align: center;
+
+    border: 2px dotted darkslateblue;
+}
+
+header h1{
+    font: calc(2px + 4vw) spookyFont, Papyrus, fantasy;
+    color: darkred;
+}
+
+header p{
+    color: darkblue;
+    font: calc(2px + 1.4vw) papyrus, fantasy;
+}
+
+nav{
+    Background-color: red;
+    Padding: 2%;
+    text-align: center;
+
+}
+
+Nav ul{
+    Padding-left: 0;
+    List-style: none;
+}
+
+Nav ul li{
+    Display: inline;
+    Padding: 4%;
+    Border-right: 2px solid black;
+}
+
+Nav ul li a{
+    Text-decoration: none;
+    Color: black;
+    Font: calc(2px + 1.4vw) papyrus, fantasy;
+}
+
+main{
+    height: 210%;
+    text-align: center;
+    margin: 2%;
+}
+
+
+h2{
+    font: calc(2px + 3vw) spookyFont, Papyrus, fantasy;
+    color: rebeccapurple;
+    margin: 2%
+}
+
+img{
+    max-width: 20vw;
+}
+
+footer{
+    font: calc(2px + 2vw) spookyFont, Papyrus, fantasy;
+    text-align: center;
+}
+
+footer a{
+    color: darkred;
+}
