@@ -1,0 +1,143 @@
+*{
+    margin: 0;
+    box-sizing: border-box;
+}
+
+@font-face{
+    font-family: spookyFont;
+    src: url("src/Creepster-Regular.ttf");
+}
+
+#wrapper{
+    min-height: 100vh;
+    width: 80vw;
+    margin: 0 auto;
+
+    background-color: orange;
+}
+
+header{
+    padding: 3%;
+    background-color: plum;
+    text-align: center;
+
+    border: 2px dotted darkslateblue;
+}
+
+header h1{
+    font: calc(2px + 4vw) spookyFont, Papyrus, fantasy;
+    color: darkred;
+}
+
+header p{
+    color: darkblue;
+    font: calc(2px + 1.4vw) papyrus, fantasy;
+}
+
+#nav-main-two-col{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+}
+/*nav*/
+
+nav{
+    background-color: red;
+    width: 30%;
+}
+
+nav ul {
+    padding: 0;
+    list-style: none;
+    margin: 4%;
+}
+
+nav ul li{
+    background-color: #b59ee3;
+    border: 2px dashed yellow;
+    text-align: center;
+
+    /*auto - centers list items*/
+    margin: 10% auto;
+    padding: 4%;
+}
+
+Nav ul li a{
+    Text-decoration: none;
+    Color: black;
+    Font: calc(2px + 1.4vw) papyrus, fantasy;
+}
+
+
+main{
+    height: 210%;
+    text-align: center;
+    margin: 2%;
+    width: 70%;
+}
+
+
+h2{
+    font: calc(2px + 3vw) spookyFont, Papyrus, fantasy;
+    color: rebeccapurple;
+    margin: 2%
+}
+
+img{
+    max-width: 20vw;
+}
+
+#scary-content{
+    display: none;
+}
+
+
+#scary-content img{
+    border: 5px solid orangered;
+}
+
+button{
+    border: 4px dashed darkred;
+    color: #ecbe67;
+    background-color: #3a1943;
+    margin: 3%;
+    padding: 5%;
+    font: calc(2px + 4vw) spookyFont, Papyrus, fantasy;
+}
+
+button:hover{
+    background-color: #2e1335;
+    color: #daaf5f;
+}
+
+footer{
+    font: calc(2px + 2vw) spookyFont, Papyrus, fantasy;
+    text-align: center;
+}
+
+footer a{
+    color: darkred;
+}
+
+@media screen and (max-width: 1000px) {
+    #nav-main-two-col{
+        display: flex;
+        flex-direction: column;
+    }
+
+    nav ul{
+        /*margin: 0 2%;*/
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+    }
+    nav ul li{
+        margin: 2%;
+        padding: 1%;
+        width: 100%; /*makes each nav box the same size*/
+    }
+
+    nav, main{
+        width: 100%;
+    }
+}
